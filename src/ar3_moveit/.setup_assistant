@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ar3_model
+    relative_path: urdf/ar3_moveit.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ar3.srdf
+  CONFIG:
+    author_name: Anthony
+    author_email: 123@123.com
+    generated_timestamp: 1724826203

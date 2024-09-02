@@ -1,0 +1,4532 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>6235 830000000</sim_time>
+      <real_time>717 598336663</real_time>
+      <wall_time>1724831457 488438060</wall_time>
+      <iterations>716273</iterations>
+      <model name='EmptyWorldWood'>
+        <pose>0 0 -0.11 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Floor_0'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_0'>
+          <pose>0 10 -0.11 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_10'>
+          <pose>0 -10 -0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_11'>
+          <pose>10 0 -0.1 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_2'>
+          <pose>-10 0 -0.11 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_4'>
+          <pose>0 -10 -0.11 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_6'>
+          <pose>10 0 -0.11 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_8'>
+          <pose>0 10 -0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_9'>
+          <pose>-10 0 -0.1 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='local_panel'>
+        <pose>0.375 0 0.025 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.375 0 0.025 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01'>
+        <pose>-0.200001 -0.35 0.04999 0 1e-06 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.200001 -0.35 0.04999 0 1e-06 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01_clone'>
+        <pose>-6.07573 -0.85599 0.05 3e-06 -0 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.07573 -0.85599 0.05 3e-06 -0 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024125 -0.024128 -0.125347 0.482558 -0.482493 0</acceleration>
+          <wrench>-0.024125 -0.024128 -0.125347 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01_clone_0'>
+        <pose>-7.13532 -0.855496 0.05 4e-06 -0 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.13532 -0.855496 0.05 4e-06 -0 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024693 -0.024521 0.060481 0.491824 -0.491761 9e-06</acceleration>
+          <wrench>-0.024693 -0.024521 0.060481 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01_clone_1'>
+        <pose>-6.09705 -0.433262 0.05 -0 -5e-06 1.57082</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.09705 -0.433262 0.05 -0 -5e-06 1.57082</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024318 0.024317 -0.048636 -0.486338 -0.486363 0</acceleration>
+          <wrench>-0.024318 0.024317 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01_clone_2'>
+        <pose>-7.14066 -0.437221 0.05 -2e-06 2e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.14066 -0.437221 0.05 -2e-06 2e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024319 -0.024316 -0.048636 0.486326 0.486377 0</acceleration>
+          <wrench>0.024319 -0.024316 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number0_01_clone_3'>
+        <pose>-6.09921 0.221406 0.05 -1e-06 -1e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.09921 0.221406 0.05 -1e-06 -1e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024224 0.024229 -0.086299 -0.484504 0.484441 0</acceleration>
+          <wrench>0.024224 0.024229 -0.086299 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01'>
+        <pose>-0.35 -0.35 0.050001 -2e-06 -1.4e-05 1.5709</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.35 -0.35 0.050001 -2e-06 -1.4e-05 1.5709</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024315 0.02432 -0.048635 -0.486395 0.486302 0</acceleration>
+          <wrench>0.024315 0.02432 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01_clone'>
+        <pose>-6.2113 -0.859522 0.050002 -4.1e-05 3e-06 1.57093</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.2113 -0.859522 0.050002 -4.1e-05 3e-06 1.57093</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024321 -0.024315 -0.048634 0.486286 0.486396 -0</acceleration>
+          <wrench>0.024321 -0.024315 -0.048634 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01_clone_0'>
+        <pose>-7.29404 -0.866374 0.05 4e-06 5e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.29404 -0.866374 0.05 4e-06 5e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024316 -0.02432 -0.048636 0.486393 -0.486308 0</acceleration>
+          <wrench>-0.024316 -0.02432 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01_clone_1'>
+        <pose>-6.22447 -0.445865 0.05 -2e-06 -2e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.22447 -0.445865 0.05 -2e-06 -2e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024316 0.02432 -0.048635 -0.486394 0.486308 0</acceleration>
+          <wrench>0.024316 0.02432 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01_clone_2'>
+        <pose>-7.33911 -0.465924 0.05 -8e-06 1e-06 1.57089</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.33911 -0.465924 0.05 -8e-06 1e-06 1.57089</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024315 0.02432 -0.048635 -0.4864 0.486301 0</acceleration>
+          <wrench>0.024315 0.02432 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number1_01_clone_3'>
+        <pose>-6.25676 0.210126 0.05 2e-06 -4e-06 1.5709</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.25676 0.210126 0.05 2e-06 -4e-06 1.5709</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.023891 0.023886 -0.220606 -0.477722 -0.477826 0</acceleration>
+          <wrench>-0.023891 0.023886 -0.220606 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01'>
+        <pose>-0.45 -0 0.050001 -1.1e-05 -7e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.45 -0 0.050001 -1.1e-05 -7e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024316 0.024319 -0.048634 -0.486377 0.48632 0</acceleration>
+          <wrench>0.024316 0.024319 -0.048634 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01_clone'>
+        <pose>-6.08497 -0.688945 0.049991 7e-06 1e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.08497 -0.688945 0.049991 7e-06 1e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01_clone_0'>
+        <pose>-7.13588 -0.676922 0.05 -3e-06 1e-06 1.57084</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.13588 -0.676922 0.05 -3e-06 1e-06 1.57084</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024319 -0.024317 -0.048636 0.486331 0.486372 0</acceleration>
+          <wrench>0.024319 -0.024317 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01_clone_1'>
+        <pose>-6.07346 -0.212063 0.050001 2.1e-05 1e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.07346 -0.212063 0.050001 2.1e-05 1e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.025806 -0.025628 0.475842 0.512537 -0.512465 9e-06</acceleration>
+          <wrench>-0.025806 -0.025628 0.475842 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01_clone_2'>
+        <pose>-7.12563 -0.23007 0.05 -4e-06 -2e-06 1.57084</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.12563 -0.23007 0.05 -4e-06 -2e-06 1.57084</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.026362 0.026194 0.737314 -0.525577 0.525525 9e-06</acceleration>
+          <wrench>0.026362 0.026194 0.737314 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2_01_clone_3'>
+        <pose>-6.10922 0.44153 0.050001 -8e-06 -3e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.10922 0.44153 0.050001 -8e-06 -3e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024316 0.024319 -0.048637 -0.486378 0.486321 -0</acceleration>
+          <wrench>0.024316 0.024319 -0.048637 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01'>
+        <pose>-0.199996 -0.2 0.05 -1e-06 -3e-06 1.57081</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.199996 -0.2 0.05 -1e-06 -3e-06 1.57081</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024202 0.024203 -0.094727 -0.484058 0.484047 0</acceleration>
+          <wrench>0.024202 0.024203 -0.094727 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01_clone'>
+        <pose>-6.36038 -0.858507 0.05 -8e-06 -1e-06 1.57084</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.36038 -0.858507 0.05 -8e-06 -1e-06 1.57084</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024317 0.024319 -0.048635 -0.486371 0.486328 -0</acceleration>
+          <wrench>0.024317 0.024319 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01_clone_0'>
+        <pose>-7.46945 -0.883282 0.050001 -5e-06 -6e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.46945 -0.883282 0.050001 -5e-06 -6e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024317 0.024319 -0.048636 -0.486375 0.486324 -0</acceleration>
+          <wrench>0.024317 0.024319 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01_clone_1'>
+        <pose>-6.36654 -0.445389 0.04999 -4e-06 1e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.36654 -0.445389 0.04999 -4e-06 1e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01_clone_2'>
+        <pose>-7.50833 -0.460315 0.05 3e-06 2e-06 1.57083</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.50833 -0.460315 0.05 3e-06 2e-06 1.57083</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024317 -0.024319 -0.048635 0.486369 -0.486333 0</acceleration>
+          <wrench>-0.024317 -0.024319 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3_01_clone_3'>
+        <pose>-6.36819 0.193905 0.05 -3e-06 2e-06 1.57082</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.36819 0.193905 0.05 -3e-06 2e-06 1.57082</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024241 -0.02424 -0.079736 0.484789 0.48481 0</acceleration>
+          <wrench>0.024241 -0.02424 -0.079736 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01'>
+        <pose>-0.349999 0.349999 0.050003 1.7e-05 -3.6e-05 1.57074</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.349999 0.349999 0.050003 1.7e-05 -3.6e-05 1.57074</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024317 0.024319 -0.048633 -0.486361 -0.486317 0</acceleration>
+          <wrench>-0.024317 0.024319 -0.048633 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01_clone'>
+        <pose>-6.64676 -0.675478 0.050001 7e-06 6e-06 1.57076</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.64676 -0.675478 0.050001 7e-06 6e-06 1.57076</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024318 -0.024317 -0.048635 0.48633 -0.486366 0</acceleration>
+          <wrench>-0.024318 -0.024317 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01_clone_0'>
+        <pose>-7.82114 -0.661511 0.050001 1.3e-05 -1e-05 1.57075</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.82114 -0.661511 0.050001 1.3e-05 -1e-05 1.57075</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.023496 0.023499 -0.377092 -0.469986 -0.469947 0</acceleration>
+          <wrench>-0.023496 0.023499 -0.377092 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01_clone_1'>
+        <pose>-6.66088 -0.181097 0.050002 4.5e-05 0 1.57075</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.66088 -0.181097 0.050002 4.5e-05 0 1.57075</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024317 0.02432 -0.048633 -0.486373 -0.486309 -0</acceleration>
+          <wrench>-0.024317 0.02432 -0.048633 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01_clone_2'>
+        <pose>-7.84423 -0.240835 0.05 2e-06 -3e-06 1.57076</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.84423 -0.240835 0.05 2e-06 -3e-06 1.57076</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024319 0.025189 0.301303 -0.503825 -0.503828 4.3e-05</acceleration>
+          <wrench>-0.024319 0.025189 0.301303 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number4_01_clone_3'>
+        <pose>-6.69032 0.411755 0.050001 -3e-06 8e-06 1.57075</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.69032 0.411755 0.050001 -3e-06 8e-06 1.57075</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024068 -0.024069 -0.148555 0.481385 0.481347 -0</acceleration>
+          <wrench>0.024068 -0.024069 -0.148555 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01'>
+        <pose>-0.350001 -0.199999 0.050001 -2e-05 5e-06 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.350001 -0.199999 0.050001 -2e-05 5e-06 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024319 -0.024316 -0.048634 0.486314 0.486377 0</acceleration>
+          <wrench>0.024319 -0.024316 -0.048634 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01_clone'>
+        <pose>-6.48867 -0.87112 0.050001 1e-06 1.2e-05 1.57089</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.48867 -0.87112 0.050001 1e-06 1.2e-05 1.57089</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024622 -0.02482 0.076306 0.492616 -0.492538 -1e-05</acceleration>
+          <wrench>-0.024622 -0.02482 0.076306 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01_clone_0'>
+        <pose>-7.64716 -0.862022 0.05 -2e-06 1e-06 1.57092</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.64716 -0.862022 0.05 -2e-06 1e-06 1.57092</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024668 -0.024547 0.041712 0.49092 -0.49079 6e-06</acceleration>
+          <wrench>-0.024668 -0.024547 0.041712 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01_clone_1'>
+        <pose>-6.50237 -0.438397 0.050001 7e-06 -6e-06 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.50237 -0.438397 0.050001 7e-06 -6e-06 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.02432 0.024316 -0.048637 -0.486311 -0.486387 -0</acceleration>
+          <wrench>-0.02432 0.024316 -0.048637 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01_clone_2'>
+        <pose>-7.6612 -0.460316 0.05 -1e-06 -2e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.6612 -0.460316 0.05 -1e-06 -2e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.02474 0.024599 0.121608 -0.494879 0.494813 7e-06</acceleration>
+          <wrench>0.02474 0.024599 0.121608 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number5_01_clone_3'>
+        <pose>-6.52151 0.205271 0.050001 1.1e-05 -3e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.52151 0.205271 0.050001 1.1e-05 -3e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.025187 0.025143 0.283011 -0.502848 -0.502931 -2e-06</acceleration>
+          <wrench>-0.025187 0.025143 0.283011 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01'>
+        <pose>-0.299999 1e-06 0.05 0 -9e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.299999 1e-06 0.05 0 -9e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024316 0.024319 -0.048635 -0.486376 0.486324 0</acceleration>
+          <wrench>0.024316 0.024319 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01_clone'>
+        <pose>-6.6255 -0.855146 0.05 -6e-06 -2e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.6255 -0.855146 0.05 -6e-06 -2e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024316 0.024319 -0.048635 -0.486384 0.486316 0</acceleration>
+          <wrench>0.024316 0.024319 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01_clone_0'>
+        <pose>-7.80741 -0.859489 0.050001 -7e-06 5e-06 1.57084</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.80741 -0.859489 0.050001 -7e-06 5e-06 1.57084</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024319 -0.024317 -0.048636 0.486331 0.486368 -0</acceleration>
+          <wrench>0.024319 -0.024317 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01_clone_1'>
+        <pose>-6.65396 -0.419742 0.050001 6e-06 -5e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.65396 -0.419742 0.050001 6e-06 -5e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024319 0.024316 -0.048636 -0.48632 -0.48638 0</acceleration>
+          <wrench>-0.024319 0.024316 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01_clone_2'>
+        <pose>-7.83132 -0.423881 0.05 3e-06 -4e-06 1.57085</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.83132 -0.423881 0.05 3e-06 -4e-06 1.57085</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.025295 0.025485 0.420479 -0.50972 -0.509786 1e-05</acceleration>
+          <wrench>-0.025295 0.025485 0.420479 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number6_01_clone_3'>
+        <pose>-6.6752 0.2108 0.05 1e-06 -2e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.6752 0.2108 0.05 1e-06 -2e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024319 0.024316 -0.048635 -0.48632 -0.486382 0</acceleration>
+          <wrench>-0.024319 0.024316 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01'>
+        <pose>-0.199999 0.199998 0.050001 -4e-06 -2.4e-05 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.199999 0.199998 0.050001 -4e-06 -2.4e-05 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.025501 0.026147 0.425782 -0.510004 0.509978 -3.2e-05</acceleration>
+          <wrench>0.025501 0.026147 0.425782 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01_clone'>
+        <pose>-6.2494 -0.686348 0.050001 -9e-06 2e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.2494 -0.686348 0.050001 -9e-06 2e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.02432 -0.024316 -0.048635 0.486311 0.486387 -0</acceleration>
+          <wrench>0.02432 -0.024316 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01_clone_0'>
+        <pose>-7.31426 -0.678701 0.05 -8e-06 1e-06 1.57089</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.31426 -0.678701 0.05 -8e-06 1e-06 1.57089</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.023681 -0.023677 -0.304617 0.473541 0.473625 0</acceleration>
+          <wrench>0.023681 -0.023677 -0.304617 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01_clone_1'>
+        <pose>-6.21964 -0.211825 0.05 1e-06 1e-06 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.21964 -0.211825 0.05 1e-06 1e-06 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01_clone_2'>
+        <pose>-7.32898 -0.195822 0.05 3e-06 -3e-06 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.32898 -0.195822 0.05 3e-06 -3e-06 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.026411 0.025383 0.672869 -0.522336 -0.52236 -5.1e-05</acceleration>
+          <wrench>-0.026411 0.025383 0.672869 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number7_01_clone_3'>
+        <pose>-6.25683 0.435581 0.050001 -4e-06 1e-05 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.25683 0.435581 0.050001 -4e-06 1e-05 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.023361 -0.023357 -0.433169 0.467134 0.467207 -0</acceleration>
+          <wrench>0.023361 -0.023357 -0.433169 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01'>
+        <pose>-0.349999 0.2 0.050001 8e-06 -1.1e-05 1.57086</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.349999 0.2 0.050001 8e-06 -1.1e-05 1.57086</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024319 0.024316 -0.048634 -0.486315 -0.486381 0</acceleration>
+          <wrench>-0.024319 0.024316 -0.048634 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01_clone'>
+        <pose>-6.3822 -0.69343 0.05 6e-06 -2e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.3822 -0.69343 0.05 6e-06 -2e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.02432 0.024316 -0.048635 -0.486309 -0.486392 0</acceleration>
+          <wrench>-0.02432 0.024316 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01_clone_0'>
+        <pose>-7.49705 -0.675812 0.04999 -1e-06 1e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.49705 -0.675812 0.04999 -1e-06 1e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01_clone_1'>
+        <pose>-6.35083 -0.235431 0.050001 1.2e-05 4e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.35083 -0.235431 0.050001 1.2e-05 4e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024042 -0.024046 -0.158255 0.480924 -0.480839 0</acceleration>
+          <wrench>-0.024042 -0.024046 -0.158255 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01_clone_2'>
+        <pose>-7.48552 -0.238487 0.05 -6e-06 -1e-06 1.57087</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.48552 -0.238487 0.05 -6e-06 -1e-06 1.57087</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024319 -0.024316 -0.048635 0.486316 0.486385 0</acceleration>
+          <wrench>0.024319 -0.024316 -0.048635 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number8_01_clone_3'>
+        <pose>-6.40938 0.435176 0.05 6e-06 -4e-06 1.57088</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.40938 0.435176 0.05 6e-06 -4e-06 1.57088</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024006 0.024002 -0.174463 -0.480037 -0.480112 0</acceleration>
+          <wrench>-0.024006 0.024002 -0.174463 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01'>
+        <pose>-0.199999 0.349998 0.050002 -1.8e-05 -2.7e-05 1.57072</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-0.199999 0.349998 0.050002 -1.8e-05 -2.7e-05 1.57072</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.02432 0.024316 -0.048634 -0.486302 0.486381 0</acceleration>
+          <wrench>0.02432 0.024316 -0.048634 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01_clone'>
+        <pose>-6.50558 -0.691483 0.050002 3e-06 -4.4e-05 1.57068</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.50558 -0.691483 0.050002 3e-06 -4.4e-05 1.57068</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024288 0.024293 -0.059589 -0.485841 -0.485749 0</acceleration>
+          <wrench>-0.024288 0.024293 -0.059589 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01_clone_0'>
+        <pose>-7.67107 -0.682244 0.05 -5e-06 1e-06 1.5707</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.67107 -0.682244 0.05 -5e-06 1e-06 1.5707</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.024315 -0.02432 -0.048636 0.486396 0.486305 -0</acceleration>
+          <wrench>0.024315 -0.02432 -0.048636 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01_clone_1'>
+        <pose>-6.50681 -0.217391 0.05 4e-06 0 1.57072</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.50681 -0.217391 0.05 4e-06 0 1.57072</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024036 0.02404 -0.160896 -0.480791 -0.480714 -0</acceleration>
+          <wrench>-0.024036 0.02404 -0.160896 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01_clone_2'>
+        <pose>-7.65347 -0.196872 0.05 7e-06 -1e-06 1.57071</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.65347 -0.196872 0.05 7e-06 -1e-06 1.57071</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024748 0.024767 0.130597 -0.495336 -0.495243 1e-06</acceleration>
+          <wrench>-0.024748 0.024767 0.130597 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number9_01_clone_3'>
+        <pose>-6.54352 0.458246 0.05 3e-06 2e-06 1.57072</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-6.54352 0.458246 0.05 3e-06 2e-06 1.57072</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.024881 -0.024921 0.194064 0.498416 -0.498498 -2e-06</acceleration>
+          <wrench>-0.024881 -0.024921 0.194064 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-3.80425 12.3571 20.0799 0 0.877796 -1.57855</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='EmptyWorldWood'>
+      <pose>-0.084731 0.09036 0 0 -0 0</pose>
+      <link name='Floor_0'>
+        <collision name='Floor_0_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 20.15 0.1</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.05 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Floor_0_Visual'>
+          <pose>0 0 0.05 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 20.15 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose>0 0 0.01 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_0'>
+        <collision name='Wall_0_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_0_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>0 10 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_10'>
+        <collision name='Wall_10_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_10_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose>0 -10 0.01 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_11'>
+        <collision name='Wall_11_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_11_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose>10 0 0.01 0 -0 1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_2'>
+        <collision name='Wall_2_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_2_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-10 0 0 0 -0 -1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_4'>
+        <collision name='Wall_4_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_4_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>0 -10 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_6'>
+        <collision name='Wall_6_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_6_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>10 0 0 0 -0 1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_8'>
+        <collision name='Wall_8_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_8_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose>0 10 0.01 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_9'>
+        <collision name='Wall_9_Collision'>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_9_Visual'>
+          <pose>0 0 0.005 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>20.15 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose>-10 0 0.01 0 -0 -1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='number1_01'>
+      <pose>-0.127191 -0.106004 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01'>
+      <pose>-0.084542 -0.390926 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01'>
+      <pose>-0.398885 -0.405874 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01'>
+      <pose>-0.100482 -0.242996 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01'>
+      <pose>-0.250926 -0.250094 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01'>
+      <pose>-0.398383 -0.246863 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01'>
+      <pose>-0.542325 -0.253185 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01'>
+      <pose>-0.094913 -0.102476 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01'>
+      <pose>-0.249591 -0.105418 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01'>
+      <pose>-0.394789 -0.100649 0.05 0 -0 0</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01_clone'>
+      <pose>-6.07573 -0.85599 0.049991 -0 -5e-06 1.57083</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01_clone_0'>
+      <pose>-7.13532 -0.855496 0.049991 -0 -5e-06 1.57083</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number1_01_clone'>
+      <pose>-6.2113 -0.859523 0.050001 -1.1e-05 -4e-06 1.57087</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number1_01_clone_0'>
+      <pose>-7.29404 -0.866374 0.050001 -1.1e-05 -4e-06 1.57087</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01_clone'>
+      <pose>-6.36038 -0.858507 0.05 3e-06 -3e-06 1.57081</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01_clone_0'>
+      <pose>-7.46945 -0.883282 0.05 3e-06 -3e-06 1.57081</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01_clone'>
+      <pose>-6.48867 -0.871122 0.05 1e-06 -6e-06 1.57085</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01_clone_0'>
+      <pose>-7.64716 -0.862022 0.05 1e-06 -6e-06 1.57085</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01_clone'>
+      <pose>-6.6255 -0.855146 0.05 -5e-06 -2e-06 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01_clone_0'>
+      <pose>-7.80741 -0.85949 0.05 -5e-06 -2e-06 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01_clone'>
+      <pose>-6.08497 -0.688946 0.05 5e-06 1e-06 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01_clone_0'>
+      <pose>-7.13588 -0.676922 0.05 5e-06 1e-06 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01_clone'>
+      <pose>-6.2494 -0.686348 0.05 -1e-06 -2e-06 1.57085</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01_clone_0'>
+      <pose>-7.31426 -0.678701 0.05 -1e-06 -2e-06 1.57085</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01_clone'>
+      <pose>-6.3822 -0.69343 0.050001 9e-06 -4e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01_clone_0'>
+      <pose>-7.49705 -0.675813 0.050001 9e-06 -4e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01_clone'>
+      <pose>-6.50558 -0.691481 0.05 0 -8e-06 1.57068</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01_clone_0'>
+      <pose>-7.67107 -0.682245 0.05 0 -8e-06 1.57068</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01_clone'>
+      <pose>-6.64676 -0.675479 0.05 2e-06 -1e-06 1.57072</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01_clone_0'>
+      <pose>-7.82114 -0.66151 0.05 2e-06 -1e-06 1.57072</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='local_panel'>
+      <pose>0.296196 0.000107 0.025 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.35 0.5 0.05</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://local_panel/meshes/local_panel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01_clone_1'>
+      <pose>-6.09705 -0.433262 0.05 -2e-06 2e-06 1.57083</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01_clone_2'>
+      <pose>-7.14066 -0.437221 0.05 -1e-06 4e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number0_01_clone_3'>
+      <pose>-6.09921 0.221406 0.05 -1e-06 4e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number0_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number0_01/materials/scripts</uri>
+              <uri>model://number0_01/materials/textures</uri>
+              <name>Number/Zero</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number1_01_clone_1'>
+      <pose>-6.22447 -0.445865 0.05 3e-06 1e-06 1.57089</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number1_01_clone_2'>
+      <pose>-7.33911 -0.465924 0.05 3e-06 1e-06 1.57089</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number1_01_clone_3'>
+      <pose>-6.25676 0.210126 0.05 3e-06 1e-06 1.57089</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01_clone_1'>
+      <pose>-6.36654 -0.445388 0.050001 3e-06 1.2e-05 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01_clone_2'>
+      <pose>-7.50833 -0.460315 0.050001 3e-06 1.2e-05 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3_01_clone_3'>
+      <pose>-6.36819 0.193905 0.050001 3e-06 1.2e-05 1.57082</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3_01/materials/scripts</uri>
+              <uri>model://number3_01/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01_clone_1'>
+      <pose>-6.50237 -0.438397 0.05 -3e-06 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01_clone_2'>
+      <pose>-7.6612 -0.460316 0.05 -3e-06 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number5_01_clone_3'>
+      <pose>-6.52151 0.205271 0.05 -3e-06 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number5_01/materials/scripts</uri>
+              <uri>model://number5_01/materials/textures</uri>
+              <name>Number/Five</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01_clone_1'>
+      <pose>-6.65396 -0.419741 0.050001 4e-06 7e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01_clone_2'>
+      <pose>-7.83132 -0.42388 0.050001 4e-06 7e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number6_01_clone_3'>
+      <pose>-6.6752 0.2108 0.050001 4e-06 7e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number6_01/materials/scripts</uri>
+              <uri>model://number6_01/materials/textures</uri>
+              <name>Number/Six</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01_clone_1'>
+      <pose>-6.07346 -0.212063 0.05 0 3e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01_clone_2'>
+      <pose>-7.12563 -0.23007 0.05 0 3e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2_01_clone_3'>
+      <pose>-6.10922 0.44153 0.05 0 3e-06 1.57084</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2_01/materials/scripts</uri>
+              <uri>model://number2_01/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01_clone_1'>
+      <pose>-6.21964 -0.211825 0.050001 1.1e-05 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01_clone_2'>
+      <pose>-7.32898 -0.195822 0.050001 1.1e-05 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number7_01_clone_3'>
+      <pose>-6.25683 0.435581 0.050001 1.1e-05 2e-06 1.57086</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number7_01/materials/scripts</uri>
+              <uri>model://number7_01/materials/textures</uri>
+              <name>Number/Seven</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01_clone_1'>
+      <pose>-6.35083 -0.235431 0.05 -2e-06 4e-06 1.57087</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01_clone_2'>
+      <pose>-7.48552 -0.238487 0.05 -2e-06 4e-06 1.57087</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number8_01_clone_3'>
+      <pose>-6.40938 0.435176 0.05 -2e-06 4e-06 1.57087</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number8_01/materials/scripts</uri>
+              <uri>model://number8_01/materials/textures</uri>
+              <name>Number/Eight</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01_clone_1'>
+      <pose>-6.50681 -0.217391 0.05 2e-06 8e-06 1.57071</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01_clone_2'>
+      <pose>-7.65347 -0.196872 0.05 2e-06 8e-06 1.57071</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number9_01_clone_3'>
+      <pose>-6.54352 0.458246 0.05 2e-06 8e-06 1.57071</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number9_01/materials/scripts</uri>
+              <uri>model://number9_01/materials/textures</uri>
+              <name>Number/Nine</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01_clone_1'>
+      <pose>-6.66088 -0.181097 0.050001 -9e-06 -6e-06 1.57075</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01_clone_2'>
+      <pose>-7.84423 -0.240835 0.050001 -9e-06 -6e-06 1.57075</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number4_01_clone_3'>
+      <pose>-6.69032 0.411754 0.050001 -9e-06 -6e-06 1.57075</pose>
+      <static>0</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1_01/meshes/number.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number4_01/materials/scripts</uri>
+              <uri>model://number4_01/materials/textures</uri>
+              <name>Number/Four</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+  </world>
+</sdf>

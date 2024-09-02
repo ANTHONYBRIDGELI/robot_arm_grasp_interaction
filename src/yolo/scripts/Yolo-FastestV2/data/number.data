@@ -1,0 +1,22 @@
+[name]
+model_name=number
+
+[train-configure]
+epochs=200
+steps=150,250
+batch_size=16
+subdivisions=1
+learning_rate=0.001
+
+[model-configure]
+pre_weights=None
+classes=25
+width=352
+height=352
+anchor_num=3
+anchors=44.16,78.13, 47.09,39.00, 53.76,100.36, 56.93,82.23, 61.55,55.59, 72.19,99.54
+
+[data-configure]
+train=datasets/train.txt
+val=datasets/val.txt
+names=data/number.names

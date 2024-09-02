@@ -1,0 +1,13 @@
+material Number/Zero
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture number0.png
+      }
+    }
+  }
+}

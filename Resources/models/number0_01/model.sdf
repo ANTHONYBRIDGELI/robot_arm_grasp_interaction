@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="number0_01">
+    <pose>0 0 0.05 0 0 0</pose>
+    <static>false</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://number0_01/meshes/number.dae</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://number0_01/materials/scripts</uri>
+            <uri>model://number0_01/materials/textures</uri>
+            <name>Number/Zero</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

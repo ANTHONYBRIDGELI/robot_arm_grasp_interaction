@@ -1,0 +1,8 @@
+<launch>
+    <!-- <param name="robot_description" command="$(find xacro)/xacro $(find ar3_model)/urdf/ar3_copy.xacro" /> -->
+    <param name="robot_description" textfile="$(find ar3_model)/urdf/ar3_moveit.urdf" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ar3_model)/config/ar3_display.rviz" />
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" />
+</launch>
