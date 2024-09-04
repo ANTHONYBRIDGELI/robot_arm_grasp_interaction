@@ -385,4 +385,4 @@ private:
 项目开发十分不易，为了项目的可持续发展以及为用户提供更加完善可靠的服务，获取源码需要收取一点微薄的费用，您的支持是我们前进的动力，我们十分感谢您提供的帮助。 \
 获取源码请关注微信公众号"开发者工坊":
 
-<img src="https://gitee.com/Anthony_Bridge/assets/raw/master/common/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png"  width="400" />
+<img src="https://gitee.com/Anthony_Bridge/assets/raw/master/common/%E7%99%BD%E5%BA%95%E7%BB%BF%E5%AD%97%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%92%8C%E5%90%8D%E7%A7%B0.png"  width="500" />
