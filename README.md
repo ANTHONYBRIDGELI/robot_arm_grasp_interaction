@@ -2,6 +2,10 @@
 这是一个基于yolo图像识别，使用moveit!对机械臂进行控制，实现特征物体吸取搬移的仿真实验。<br />
 实现基于ROS，在Gazebo仿真环境中进行实验。
 
+## 项目运行效果
+[基于yolo和moveit的图像识别机械臂目标抓取搬移](https://www.bilibili.com/video/BV1kypFepEfb/?vd_source=c46697e1d06be94cd5e10883ded86efe)
+
+
 ## 项目运行环境
 ubuntu20.04 \
 ros-noetic \
